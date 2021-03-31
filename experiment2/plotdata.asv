@@ -1,0 +1,15 @@
+function [] = plotdata(par, auc, num)
+name = 'AUC fo different par';
+    figure('NumberTitle', 'off', 'Name', name);
+    plot(par,auc);
+    xlabel('par') 
+    ylabel('AUC')
+    title(name);
+ name = 'the number of features selected ';
+    figure('NumberTitle', 'off', 'Name', name);
+    plot(par,auc);
+    xlabel('par') 
+    ylabel('AUC')
+    title(name);
+end
+
